@@ -10,31 +10,31 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chesapeakemarinetuning.com/">
-    <meta property="og:title" content="Outboard Tuning & Mobile Marine Electronics | Chesapeake Marine Tuning">
-    <meta property="og:description" content="Expert mobile outboard tuning, marine electronics installation, and boat maintenance serving Gloucester, Hampton Roads, and the Chesapeake Bay.">
+    <meta property="og:title" content="Licensed Outboard EFI Tuning & Mobile Marine Electronics | Chesapeake Marine Tuning">
+    <meta property="og:description" content="Expert mobile outboard tuning, licensed EFI dealer service, marine electronics installation, yacht AC service, generator repair, and boat maintenance serving Gloucester, Hampton Roads, and the Chesapeake Bay.">
     <meta property="og:image" content="https://chesapeakemarinetuning.com/Tuning_Badge.png">
     
     <!-- Added Meta Description -->
-    <meta name="description" content="Expert mobile outboard tuning, marine electronics installation, and boat maintenance serving Gloucester, Hampton Roads, and the Chesapeake Bay. We come to your dock or driveway.">
+    <meta name="description" content="Expert mobile outboard tuning, licensed EFI dealer service, marine electronics installation, yacht AC service, generator repair, and boat maintenance serving Gloucester, Hampton Roads, Virginia Beach, and the Chesapeake Bay. We come to your dock or driveway.">
     
     <!-- Added Canonical URL -->
     <link rel="canonical" href="https://chesapeakemarinetuning.com">
 
     <!-- Favicons & Manifest -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link class="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link class="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
     <link class="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link class="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link class="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link class="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link class="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link class="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link class="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link class="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link class="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link class="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link class="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -58,6 +58,14 @@
         .bg-electric-blue {
             background-color: #0077ff;
         }
+        @keyframes pulse-border {
+            0%, 100% { border-color: rgba(0, 119, 255, 0.4); }
+            50% { border-color: rgba(0, 119, 255, 1); }
+        }
+        .tuning-highlight-card {
+            animation: pulse-border 3s infinite;
+            background: linear-gradient(135deg, rgba(11, 21, 40, 0.9) 0%, rgba(2, 6, 23, 0.9) 100%);
+        }
     </style>
 </head>
 <body class="text-gray-100 antialiased pb-16 sm:pb-0">
@@ -66,7 +74,7 @@
          TOP ANNOUNCEMENT BANNER
          ========================================== -->
     <div class="bg-blue-900 text-white text-[10px] md:text-sm py-2 px-4 text-center font-semibold tracking-wide border-b border-blue-800">
-        <i class="fa-solid fa-anchor mr-1.5"></i> SERVING THE CHESAPEAKE BAY & HAMPTON ROADS
+        <i class="fa-solid fa-certificate mr-1.5 text-amber-400"></i> LICENSED OUTBOARD EFI TUNING DEALER &bull; SERVING GLOUCESTER, HAMPTON ROADS & THE BAY
     </div>
 
     <!-- ==========================================
@@ -76,12 +84,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
                 <img src="Tuning_Badge.png" alt="Chesapeake Marine Tuning Logo" class="h-12 sm:h-16 w-auto object-contain" style="border-radius: 50%;">
-                <div class="hidden md:block">
-                    <span class="block text-xl font-black tracking-tight leading-none text-white">Chesapeake Marine Tuning</span>
+                <div>
+                    <span class="block text-lg sm:text-xl font-black tracking-tight leading-none text-white uppercase">Chesapeake Marine</span>
+                    <span class="block text-xs sm:text-sm font-bold tracking-widest text-electric-blue uppercase mt-1">Tuning & Rigging</span>
                 </div>
             </a>
 
-            <div class="flex items-center gap-4">
+            <!-- Quick Links menu including About link -->
+            <div class="flex items-center gap-4 sm:gap-6">
+                <nav class="hidden md:flex items-center gap-6 text-sm font-bold tracking-wide uppercase">
+                    <a href="#services" class="text-slate-300 hover:text-white transition">Services</a>
+                    <a href="#about" class="text-slate-300 hover:text-white transition">About Us</a>
+                </nav>
                 <a href="tel:7577554071" class="flex items-center gap-2 text-white hover:text-electric-blue transition font-bold text-base sm:text-lg">
                     <i class="fa-solid fa-phone text-electric-blue animate-pulse"></i> (757) 755-4071
                 </a>
@@ -110,22 +124,27 @@
 
             <!-- Value Proposition Text (Left side on desktop) -->
             <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
-                <span class="inline-block bg-blue-950 border border-blue-700 text-blue-400 text-[11px] font-black tracking-widest uppercase px-3 py-1.5 rounded">
-                    <i class="fa-solid fa-truck-moving mr-1.5"></i> WE COME TO YOU!
-                </span>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-2">
+                    <span class="inline-block bg-blue-950 border border-blue-700 text-blue-400 text-[10px] sm:text-[11px] font-black tracking-widest uppercase px-3 py-1.5 rounded">
+                        <i class="fa-solid fa-truck-moving mr-1.5"></i> WE COME TO YOU!
+                    </span>
+                    <span class="inline-block bg-slate-950 border border-amber-500/40 text-amber-400 text-[10px] sm:text-[11px] font-black tracking-widest uppercase px-3 py-1.5 rounded">
+                        <i class="fa-solid fa-award mr-1.5"></i> LICENSED OUTBOARD EFI TUNING DEALER
+                    </span>
+                </div>
                 <h1 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white uppercase leading-tight">
-                    Mobile Service. <br class="hidden sm:inline">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Premium Results.</span>
+                    Premium Outboard Tuning.<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Mobile Convenience.</span>
                 </h1>
                 <p class="text-slate-400 text-sm sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Quality work. Honest service. Built for the Bay. Get expert outboard tuning, marine electronics installations, and maintenance straight to your dock or driveway.
+                    Unlock your engine's true potential. We specialize in certified outboard EFI diagnostic tuning, advanced electronic integration, and absolute system optimization brought right to your slip or driveway.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 pt-2">
                     <a href="#services" class="bg-electric-blue hover:bg-blue-600 text-white min-h-[48px] flex items-center justify-center px-8 rounded-md font-bold text-sm sm:text-base transition shadow-xl shadow-blue-500/10">
-                        View Our Services
+                        Explore Tuning & Services
                     </a>
-                    <a href="tel:7577554071" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 min-h-[48px] flex items-center justify-center px-8 rounded-md font-bold text-sm sm:text-base transition">
-                        <i class="fa-solid fa-phone mr-2 text-slate-400"></i>Call Now
+                    <a href="#about" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 min-h-[48px] flex items-center justify-center px-8 rounded-md font-bold text-sm sm:text-base transition">
+                        Meet Your Technician
                     </a>
                 </div>
             </div>
@@ -143,8 +162,8 @@
                     <p class="text-xs sm:text-sm font-bold text-white block">Fully Insured</p>
                 </div>
                 <div class="space-y-1 p-2 bg-slate-900/30 rounded border border-slate-900/60 sm:border-transparent">
-                    <i class="fa-solid fa-user-tie text-xl sm:text-2xl text-blue-500"></i>
-                    <p class="text-xs sm:text-sm font-bold text-white block">Professional</p>
+                    <i class="fa-solid fa-gauge-high text-xl sm:text-2xl text-blue-500"></i>
+                    <p class="text-xs sm:text-sm font-bold text-white block">EFI Tuning Specialist</p>
                 </div>
                 <div class="space-y-1 p-2 bg-slate-900/30 rounded border border-slate-900/60 sm:border-transparent">
                     <i class="fa-solid fa-handshake text-xl sm:text-2xl text-blue-500"></i>
@@ -152,7 +171,7 @@
                 </div>
                 <div class="space-y-1 p-2 bg-slate-900/30 rounded border border-slate-900/60 sm:border-transparent">
                     <i class="fa-solid fa-map-location-dot text-xl sm:text-2xl text-blue-500"></i>
-                    <p class="text-xs sm:text-sm font-bold text-white block">100% Local</p>
+                    <p class="text-xs sm:text-sm font-bold text-white block">100% Mobile Service</p>
                 </div>
             </div>
         </div>
@@ -163,19 +182,37 @@
          ========================================== -->
     <section id="services" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2">
-            <h2 class="text-xs font-black tracking-widest text-electric-blue uppercase">What We Excel At</h2>
+            <h2 class="text-xs font-black tracking-widest text-electric-blue uppercase">Capabilities & Expertise</h2>
             <p class="text-2xl sm:text-4xl font-black uppercase text-white tracking-tight">Our Marine Services</p>
             <div class="h-1 w-12 bg-electric-blue mx-auto rounded"></div>
         </div>
 
+        <!-- Re-architected grid: Card 1 spans 2 columns to dynamically emphasize tuning -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-            <!-- Card 1: Outboard Tuning -->
-            <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
-                <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
-                    <i class="fa-solid fa-bolt text-lg text-electric-blue group-hover:text-white"></i>
+            
+            <!-- FEATURED HEADLINER CARD: Outboard Performance & Tuning -->
+            <div class="tuning-highlight-card border-2 p-6 sm:p-8 rounded-lg transition duration-300 group relative overflow-hidden lg:col-span-3 md:col-span-2 shadow-2xl shadow-blue-950/40">
+                <div class="absolute top-4 right-4 flex gap-2">
+                    <span class="bg-amber-500 text-slate-950 px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider shadow">Core Specialty</span>
+                    <span class="hidden sm:inline-block bg-blue-500/20 border border-blue-500/40 text-blue-400 px-2.5 py-1 rounded text-[10px] font-black uppercase tracking-wider">Licensed Dealer</span>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Outboard Tuning</h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Optimize performance, maximize reliability, and increase fuel efficiency to keep your motors purring perfectly.</p>
+                <div class="h-14 w-14 rounded bg-blue-900/50 border border-blue-500 flex items-center justify-center mb-6 shadow-inner">
+                    <i class="fa-solid fa-bolt text-2xl text-blue-400 animate-bounce"></i>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-black uppercase text-white mb-3 tracking-tight">
+                    Outboard Performance Tuning <span class="text-electric-blue">&bull;</span> EFI Calibration
+                </h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 max-w-3xl">
+                    As a certified **Licensed Outboard EFI Dealer**, we deliver specialized, high-tier Flash ECU programming and precise engine tuning options for modern **Yamaha, Suzuki, Honda, and Tohatsu** outboards.
+                </p>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                    Our custom engine mapping safely rewrites parameter thresholds to increase raw horsepower limits, optimize lean/rich fuel economy mapping, drastically sharpen holeshot throttle metrics, and remove factory constraints. Get race-bred reliability explicitly recalibrated for grueling workloads on the Chesapeake Bay.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-x-4 gap-y-2 border-t border-slate-800/80 pt-4 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                    <span class="text-blue-400"><i class="fa-solid fa-circle-check"></i> Horsepower Gains</span>
+                    <span class="text-blue-400"><i class="fa-solid fa-circle-check"></i> Optimized RPM Limits</span>
+                    <span class="text-blue-400"><i class="fa-solid fa-circle-check"></i> Enhanced Fuel Ranges</span>
+                </div>
             </div>
 
             <!-- Card 2: Marine Electronics -->
@@ -183,63 +220,135 @@
                 <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
                     <i class="fa-solid fa-display text-lg text-electric-blue group-hover:text-white"></i>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Marine Electronics</h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Full system clean installs, strategic system upgrades, and quick diagnostic repairs for your critical marine electronics.</p>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Marine Electronics Installation</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Clean, precision installation of chartplotters, sonar systems, radar, VHF radios, transducers, heading sensors, cameras, and audio integrations.</p>
             </div>
 
-            <!-- Card 3: Battery Systems -->
+            <!-- Card 3: NMEA 2000 Networking -->
             <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
                 <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
-                    <i class="fa-solid fa-battery-three-quarters text-lg text-electric-blue group-hover:text-white"></i>
+                    <i class="fa-solid fa-network-wired text-lg text-electric-blue group-hover:text-white"></i>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Battery Systems</h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Custom heavy-duty system builds, specialized trolling configurations, and reliable dual-battery isolation setups.</p>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">NMEA 2000 & Engine Data</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Custom NMEA 2000 backbone setups, fuel flow data monitoring, real-time gauge configuration, advanced network troubleshooting, and multi-display expansions.</p>
             </div>
 
-            <!-- Card 4: Rigging -->
+            <!-- Card 4: Marine Electrical & Rigging -->
             <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
                 <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
                     <i class="fa-solid fa-screwdriver-wrench text-lg text-electric-blue group-hover:text-white"></i>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Rigging & Installs</h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Clean, professional, and reliable routing. We ensure your setups are safely secured and completely weatherized.</p>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Electrical & Custom Rigging</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Heavy-duty switch panels, custom wiring upgrades, clean busbar distribution, fuse networks, circuit breakers, and custom marine lighting packages.</p>
             </div>
 
-            <!-- Card 5: Repairs -->
+            <!-- Card 5: Trolling Motors & Lithium -->
             <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
                 <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
-                    <i class="fa-solid fa-gear text-lg text-electric-blue group-hover:text-white"></i>
+                    <i class="fa-solid fa-battery-three-quarters text-lg text-electric-blue group-hover:text-white"></i>
                 </div>
-                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Maintenance & Repairs</h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Routine scheduling and complex technical fixes built explicitly to keep your vessel running optimally on the open water.</p>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Trolling Motors & Lithium</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Minn Kota installations, robust quick-release mounts, lightweight high-capacity lithium upgrades, onboard multi-bank charging, and secured battery tray tracking.</p>
             </div>
 
-            <!-- Card 6: Dynamic Callout Quote -->
-            <div class="brand-gradient border border-blue-900 p-6 sm:p-8 rounded-lg flex flex-col justify-between items-center text-center shadow-xl py-8">
-                <div class="space-y-3 my-auto">
-                    <div class="flex justify-center text-amber-400 text-xs gap-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <blockquote class="text-base sm:text-lg font-bold tracking-tight text-white uppercase leading-snug px-1">
-                        Quality Work.<br>Honest Service.<br>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">Built For The Bay.</span>
-                    </blockquote>
+            <!-- Card 6: Yacht Air Conditioning -->
+            <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
+                <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
+                    <i class="fa-solid fa-snowflake text-lg text-electric-blue group-hover:text-white"></i>
                 </div>
-                <a href="tel:7577554071" class="w-full bg-blue-950 hover:bg-blue-900 border border-blue-800 text-white font-bold h-11 flex items-center justify-center rounded uppercase tracking-wide text-xs transition mt-6">
-                    <i class="fa-solid fa-phone mr-2"></i>Call For Estimates
-                </a>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Yacht A/C Service & Install</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Marine climate control diagnostics, fast component replacements, new unit integration, eco-refrigerant servicing, and raw water cooling pump maintenance.</p>
             </div>
+
+            <!-- Card 7: Generator Repair -->
+            <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
+                <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
+                    <i class="fa-solid fa-gears text-lg text-electric-blue group-hover:text-white"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Marine Generator Service</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Routine scheduling, fuel and cooling line service, electrical side debugging, and complete replacement installs to keep your auxiliary power running flawlessly.</p>
+            </div>
+
+            <!-- Card 8: Winterization & Commissioning -->
+            <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
+                <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
+                    <i class="fa-solid fa-cloud-sun text-lg text-electric-blue group-hover:text-white"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">Seasonal Care & Winterization</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Comprehensive engine freeze protection, generator draining, domestic freshwater anti-freeze tracking, multi-point spring commissioning, and hull inspections.</p>
+            </div>
+
+            <!-- Card 9: General Repair & Maintenance -->
+            <div class="bg-slate-900/60 border border-slate-800 hover:border-blue-900 p-6 sm:p-8 rounded-lg transition duration-300 group">
+                <div class="h-11 w-11 rounded bg-blue-950 border border-blue-800 flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:border-blue-500 transition duration-300">
+                    <i class="fa-solid fa-anchor text-lg text-electric-blue group-hover:text-white"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold uppercase text-white mb-2">General Repair & Maintenance</h3>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Mobile dockside diagnostics, hydraulic steering flushes, bilge pump swaps, freshwater plumbing fixes, accessory rigs, and structured engine checks.</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Callout Row below Grid -->
+        <div class="mt-8 brand-gradient border border-blue-900 p-6 sm:p-8 rounded-lg flex flex-col md:flex-row justify-between items-center text-center md:text-left shadow-xl gap-6">
+            <div class="space-y-2">
+                <div class="flex justify-center md:justify-start text-amber-400 text-xs gap-1">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="text-lg font-bold tracking-tight text-white uppercase leading-snug">
+                    Quality Work. Honest Service. <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">Built For The Bay.</span>
+                </blockquote>
+            </div>
+            <a href="tel:7577554071" class="w-full md:w-auto px-6 bg-blue-950 hover:bg-blue-900 border border-blue-800 text-white font-bold h-11 flex items-center justify-center rounded uppercase tracking-wide text-xs transition min-w-[200px]">
+                <i class="fa-solid fa-phone mr-2"></i>Call For Estimates
+            </a>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME / TECH BIO SECTION
+         ========================================== -->
+    <section id="about" class="bg-slate-900/40 border-t border-b border-slate-900 py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <div class="lg:col-span-4 flex justify-center">
+                <div class="w-48 h-48 sm:w-64 sm:h-64 rounded-xl border border-slate-800 bg-slate-950 p-3 flex items-center justify-center relative shadow-2xl">
+                    <i class="fa-solid fa-user-gear text-6xl text-slate-800"></i>
+                    <!-- Accent Badge overlay on photo placeholder -->
+                    <div class="absolute -bottom-3 bg-electric-blue text-white px-3 py-1 rounded text-[10px] font-black uppercase tracking-widest shadow-lg">
+                        Lead Technician
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+                <span class="text-xs font-black tracking-widest text-electric-blue uppercase block">Behind the Work</span>
+                <h2 class="text-2xl sm:text-3xl font-black uppercase text-white tracking-tight">About Your Tech</h2>
+                <div class="h-1 w-10 bg-electric-blue mx-auto lg:mx-0 rounded mb-4"></div>
+                
+                <p class="text-slate-400 text-sm leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Welcome to Chesapeake Marine Tuning. As a fully insured local professional and certified **Licensed Outboard EFI Tuning Dealer**, my primary focus is delivering elite fuel injection calibration and mapping files safely right to your slip.
+                </p>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    Instead of hauling your boat away to sit in a dealer backlog for weeks, I bring advanced engine diagnostic tuning interfaces directly to you. From flashing outboards for peak throttle snap to clean NMEA helm rigging and yacht climate component replacements, everything is performed transparently with top-shelf hardware.
+                </p>
+                
+                <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-bold uppercase tracking-wider text-slate-300">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-blue-500"></i> Local Ownership</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-blue-500"></i> Advanced Tuning Infrastructure</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-blue-500"></i> 100% Mobile Fleet</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- ==========================================
          CONTACT SECTION & ESTIMATE FORM
          ========================================== -->
-    <section id="contact" class="bg-slate-950 py-16 sm:py-20 border-t border-slate-900">
-        <!-- Main Form Container Layout Wrapper -->
+    <section id="contact" class="bg-slate-950 py-16 sm:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             
-            <!-- LEFT COLUMN: Contact Text Details & Directory Cards (Takes up 5/12 columns) -->
+            <!-- LEFT COLUMN: Contact Text Details & Directory Cards -->
             <div class="lg:col-span-5 space-y-6 sm:space-y-8">
                 <div>
                     <h2 class="text-xs font-black tracking-widest text-electric-blue uppercase mb-1">Get In Touch</h2>
@@ -248,12 +357,12 @@
                 </div>
 
                 <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                    Have questions about optimization setups, custom electronics, or scheduling dynamic mobile fleet maintenance? Drop us your details, and we'll get right back to you.
+                    Have questions about optimization setups, certified EFI dealer calibrations, yacht climate installations, or scheduling dynamic mobile fleet maintenance? Drop us your details, and we'll get right back to you.
                 </p>
 
                 <!-- Communication & Social Directory Grid Block -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                    <!-- 1. Location (Static Information) -->
+                    <!-- 1. Location -->
                     <div class="flex items-center gap-3.5 bg-slate-900/40 sm:bg-transparent p-3 sm:p-0 rounded border border-slate-900 sm:border-transparent">
                         <div class="h-10 w-10 shrink-0 rounded bg-slate-900 flex items-center justify-center text-electric-blue border border-slate-800">
                             <i class="fa-solid fa-location-dot"></i>
@@ -315,10 +424,10 @@
                             </div>
                         </div>
                     </a>
-                </div> <!-- [FIXED]: This closing div now correctly terminates only the column text elements space -->
+                </div>
             </div>
 
-            <!-- RIGHT COLUMN: Web3Forms Submission Card Block (Takes up 7/12 columns cleanly) -->
+            <!-- RIGHT COLUMN: Web3Forms Submission Card Block -->
             <div class="lg:col-span-7 bg-slate-900 border border-slate-800 p-5 sm:p-8 rounded-lg shadow-xl w-full">
                 <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 sm:space-y-6">
                     <input type="hidden" name="access_key" value="b75fbd2f-aed9-43dd-b5c2-72eecfc85c62">
@@ -344,7 +453,7 @@
                     <!-- Detailed Vessel Message Text Area -->
                     <div class="space-y-1.5">
                         <label class="text-[11px] font-bold tracking-wider text-slate-400 uppercase">Requested Service / Vessel Details</label>
-                        <textarea rows="4" name="Requested Service / Vessel Details" placeholder="Tell us about your boat and what service you need..." class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition placeholder:text-slate-600"></textarea>
+                        <textarea rows="4" name="Requested Service / Vessel Details" placeholder="Tell us about your boat, motor brand, and what service you need..." class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition placeholder:text-slate-600"></textarea>
                     </div>
 
                     <!-- Submit Button Component -->
@@ -359,22 +468,24 @@
          FOOTER SECTION
          ========================================== -->
     <footer class="bg-slate-950 border-t border-slate-900 text-slate-600 text-[11px] py-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
             
-            <!-- Structural Meta Keyword Layout Badges -->
-            <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-slate-400 font-bold uppercase tracking-widest text-[10px] sm:text-xs">
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-anchor text-blue-500"></i> Boats</span>
-                <span class="text-slate-800 sm:inline hidden">|</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-fish text-blue-500"></i> Fishing</span>
-                <span class="text-slate-800 sm:inline hidden">|</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-users text-blue-500"></i> Family</span>
-                <span class="text-slate-800 sm:inline hidden">|</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-water text-blue-500"></i> Chesapeake</span>
+            <!-- Extended Structural Meta Keyword Layout Badges for SEO -->
+            <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-slate-400 font-bold uppercase tracking-widest text-[10px] sm:text-xs max-w-4xl mx-auto">
+                <span class="flex items-center gap-1"><i class="fa-solid fa-anchor text-blue-500"></i> Gloucester</span>
+                <span class="text-slate-800">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-water text-blue-500"></i> Hampton Roads</span>
+                <span class="text-slate-800">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-location-crosshairs text-blue-500"></i> Virginia Beach</span>
+                <span class="text-slate-800">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-compass text-blue-500"></i> Norfolk</span>
+                <span class="text-slate-800">|</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-map text-blue-500"></i> Williamsburg</span>
             </div>
 
             <hr class="border-slate-900 max-w-xs mx-auto">
 
-            <p class="px-4">&copy; 2026 Chesapeake Marine Tuning. All Rights Reserved. Designed for performance on the bay.</p>
+            <p class="px-4 text-slate-500">&copy; 2026 Chesapeake Marine Tuning. All Rights Reserved. Mobile service proudly optimization-tuned by a licensed Outboard EFI dealer.</p>
         </div>
     </footer>
 
